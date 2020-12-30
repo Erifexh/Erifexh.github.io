@@ -1,0 +1,152 @@
+body{
+    background-color: #fbf7f0;
+    margin: 0;
+    padding: 0;
+}
+
+header, .class-title{
+    background-color: #555555;
+    color: #d9e4dd;
+}
+
+header p{
+    font-size: x-small;
+}
+
+nav {
+    font-size: 1em;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.main-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.main-navbar li{
+    float: left;
+    width: 120px;
+}
+
+.navbar-dropdowns a:link,
+.navbar-dropdowns a:visited {
+  display: block;
+  color: #555555;
+  background-color: #aaaaaa;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+.main a:visited,
+.main a:link{
+    text-decoration: none;
+    color: #d9e4dd;
+}
+
+.navbar-list {
+    list-style-type: none;
+    font-size: 0.8em;
+    padding: 0;
+    width: 120px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar-dropdowns:hover .navbar-list {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar-list li {
+    display: block;
+    width: 100%;
+}
+
+.main-navbar a:hover {
+    background-color: #39311d;
+    color: #ffffff;
+}
+
+.row{
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+    padding: 0;
+}
+
+.note p, .b-desc p{
+    text-align: left;
+}
+
+.quag{
+    margin: 50px 0px;
+}
+
+.quag img{
+    width:75%;
+}
+
+.gear-box,
+.build-box,
+.weapon-box,
+.trinket-box,
+.pet-box,
+.skill-box{
+    background-color: #cdc9c3;
+    margin: 20px 0px;
+    padding: 0;
+}
+
+.build-box h4{
+    margin: 0;
+}
+
+.pet-box img{
+    width: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+h4{
+    background-color: #d9e4dd;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.col-1, .col-4, .col, .col-2, .col-8{
+    padding: 0;
+}
+
+.armor-rune{
+    margin-top: 40px;
+}
+
+.build-specialization{
+    padding-left: 5px;
+}
+
+footer{
+    background-color: #555555;
+    color: #d9e4dd;
+}
+
+footer a:link,
+footer a:visited{
+    text-decoration: underline;
+    color: #d9e4dd;
+}
+footer a:hover{
+    color: #cdc9c3
+}
