@@ -28,7 +28,7 @@ nav {
 
 .main-navbar li{
     float: left;
-    width: 120px;
+    width: 100px;
 }
 
 .navbar-dropdowns a:link,
@@ -54,7 +54,7 @@ nav {
     list-style-type: none;
     font-size: 0.8em;
     padding: 0;
-    width: 120px;
+    width: 100px;
     position: absolute;
     display: none;
     opacity: 0;
