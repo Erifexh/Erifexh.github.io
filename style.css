@@ -19,7 +19,6 @@ header p{
 }
 
 nav {
-    font-size: 1em;
     overflow: hidden;
     padding-bottom: 20px;
 }
@@ -40,6 +39,7 @@ nav {
 .navbar-dropdowns a:visited {
   display: block;
   color: #555555;
+  font-size: 0.8em;
   background-color: #aaaaaa;
   text-align: center;
   padding: 8px 12px;
@@ -57,7 +57,6 @@ nav {
 
 .navbar-list {
     list-style-type: none;
-    font-size: 0.7em;
     padding: 0;
     width: 95px;
     position: absolute;
@@ -78,8 +77,8 @@ nav {
 }
 
 .main-navbar a:hover {
-    background-color: #39311d;
-    color: #ffffff;
+    background-color:#cdc9c3;
+    color: #555555;
 }
 
 .row{
@@ -91,7 +90,7 @@ nav {
     padding: 0;
 }
 
-.note p, .b-desc p{
+.note p, .b-desc p, .side{
     text-align: left;
 }
 
@@ -142,11 +141,7 @@ h4{
     padding-left: 5px;
 }
 
-.side{
-    text-align: left;
-}
-
-.rotation-notes img{
+.construction{
     width: 150px;
 }
 
