@@ -126,14 +126,20 @@ nav {
     margin-bottom: 10px;
 }
 
-.rotation .nav{
+.rotation .nav li,
+.weapon-box .nav li{
     border: 2px #d9e4dd solid;
 }
+.weapon-box .nav{
+    margin-bottom: 10px;
+}
 
-.rotation .nav a{
+.rotation .nav a,
+.weapon-box .nav a{
     color:#555555;
 }
-.rotation .nav .active{
+.rotation .nav .active,
+.weapon-box .nav .active{
     background-color: #d9e4dd;
     color: #555555;
 }
@@ -163,6 +169,10 @@ h4{
     background-color: #d9e4dd;
     margin: 0;
     margin-bottom: 10px;
+}
+
+.nm{
+    margin: 0;
 }
 
 .col-1, .col-4, .col, .col-2, .col-8{
