@@ -92,22 +92,45 @@ nav {
     padding: 0;
 }
 
-#quick-links a:hover,
-#general-info a:hover,
-#cc-consumables a:hover,
-#newest-builds a:hover{
+
+
+.info-all a:hover{
     color:#555555;
 }
 
-#quick-links a:link,
-#quick-links a:visited,
-#general-info a:link,
-#general-info a:visited
-#cc-consumables a:link,
-#cc-consumables a:visited,
-#newest-builds a:link,
-#newest-builds a:visited{
+.info-all a:link,
+.info-all a:visited{
     text-decoration: none;
+}
+
+.info-all details summary{
+    width: 200px;
+    background-color: #d9e4dd;
+    color:#555555;
+}
+
+.lots-of-text{
+    background-color: #cdc9c3;
+}
+
+.outsource img{
+    width: 25px;
+}
+.outsource{
+    position: relative;
+    display: inline-block;
+}
+.outsource .outsource-text{
+    visibility: hidden;
+    background-color: beige;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 25%;
+    font-size: 0.75em;
+}
+.outsource:hover .outsource-text{
+    visibility: visible;
 }
 
 #quick-links{
