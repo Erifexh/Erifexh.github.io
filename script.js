@@ -3,7 +3,7 @@ function timeToTT(){
     let d2 = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), 4, 0 , 0));
 
     let total = d2.getTime() - d.getTime();
-    if(total <= 0) total += 86400000;
+    if(total <= 0) total += 864000000;
 
     let seconds = Math.floor((total/1000)%60);
     let minutes = Math.floor((total/1000/60)%60);
