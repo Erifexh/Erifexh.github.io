@@ -18,69 +18,29 @@ header p{
     font-size: x-small;
 }
 
-nav {
-    overflow: hidden;
-    padding-bottom: 10px;
+header .navbar a:hover, 
+header .navbar-toggler:hover, 
+.navbar-nav a:hover,
+.dropdown-menu{
+    background-color: #a5a5a4;
+    color: #555555;
 }
 
-.main-navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+header .dropdown-menu a:hover{
+    background-color: grey;
+    color: #d9e4dd;
 }
-
-.main-navbar li{
-    float: left;
-    width: 100px;
-    margin-bottom: 10px;
-}
-
-.navbar-dropdowns a:link,
-.navbar-dropdowns a:visited {
-  display: block;
-  color: #555555;
-  font-size: 0.8em;
-  background-color: #aaaaaa;
-  text-align: center;
-  padding: 2px 3px;
-  text-decoration: none;
-  border: 1px solid #ffffff;
-  border-top: 0px;
-  border-bottom: 0px;
-}
-
-.main a:visited,
-.main a:link{
-    text-decoration: none;
+.navbar .active {
+    background-color: grey;
     color: #d9e4dd;
 }
 
-.navbar-list {
-    list-style-type: none;
-    padding: 0;
-    width: 100px;
-    position: absolute;
-    display: none;
-    opacity: 0;
-    visibility: hidden;
+main .navbar{
+    background-color: #555555;
+    justify-content: right;
 }
-
-.navbar-dropdowns:hover .navbar-list {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-}
-
-.navbar-list li {
-    display: block;
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.main-navbar a:hover {
-    background-color:#cdc9c3;
-    color: #555555;
+main .navbar-brand a:hover{
+    background-color: #555555;
 }
 
 .row{
@@ -92,17 +52,28 @@ nav {
     padding: 0;
 }
 
+/*clock-design */
+.cd{
+    border: 3px solid black;
+    font-size: 1.3em;
+    background-color: #d9e4dd;
+    color: #555555;
+    margin: 20px;
+    height: 100px;
+}
 
+/*inner-clock*/
+.ic{
+    font-size: 2em;
+}
 
 .info-all a:hover{
     color:#555555;
 }
-
 .info-all a:link,
 .info-all a:visited{
     text-decoration: none;
 }
-
 .info-all details summary{
     width: 200px;
     background-color: #d9e4dd;
@@ -154,15 +125,14 @@ nav {
 .quag{
     margin: 50px 0px;
 }
-
 .quag img{
     width:75%;
 }
 
+/*display-inline*/
 .di{
     display: inline-block;
 }
-
 .di a:visited,
 .di a:link{
     color: #1f0481;
@@ -172,7 +142,6 @@ nav {
 .rotation-notes ol li{
     margin-bottom: 20px;
 }
-
 .rotation ol li{
     margin-bottom: 10px;
 }
