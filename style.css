@@ -4,7 +4,7 @@ body{
     padding: 0;
 }
 
-header, .class-title{
+header{
     background-color: #555555;
     color: #d9e4dd;
 }
@@ -12,10 +12,6 @@ header, .class-title{
 .class-title{
     padding-bottom: 5px;
     margin-bottom: 20px;
-}
-
-.modify-date{
-    font-size: x-small;
 }
 
 header .navbar a:hover, 
@@ -36,11 +32,16 @@ header .navbar .active {
 }
 
 main .navbar{
-    background-color: #555555;
     justify-content: right;
 }
 main .navbar-brand a:hover{
     background-color: #555555;
+}
+main .navbar .active{
+    background-color: #d9e4dd;
+}
+main .dropdown-menu {
+    background-color: #d9e4dd;
 }
 
 .row{
@@ -59,9 +60,11 @@ main .navbar-brand a:hover{
     background-color: #d9e4dd;
     color: #555555;
     margin: 20px;
-    height: 100px;
 }
-
+#announce{
+    font-size: larger;
+    color: #7a0404;
+}
 /*inner-clock*/
 .ic{
     font-size: 2em;
@@ -104,7 +107,7 @@ main .navbar-brand a:hover{
     visibility: visible;
 }
 
-#quick-links{
+#info-disclaimer{
     margin-top: 20px;
 }
 
@@ -228,3 +231,17 @@ footer a:visited{
 footer a:hover{
     color: #cdc9c3
 }
+
+/*class colours*/
+.bg-c-guardian{background-color: #b9e0ec;}
+.bg-c-revenant{background-color: #e4a598;}
+.bg-c-warrior{background-color: #FFE8B3;}
+.bg-c-engineer{background-color: #E8BC84;}
+.bg-c-ranger{background-color: #C7EFA2;}
+.bg-c-thief{background-color: #DEC6C9;}
+.bg-c-elementalist{background-color: #FBC5C3;}
+.bg-c-mesmer{background-color: #DBBCEA}
+.bg-c-necromancer{background-color: #A9D3B7}
+
+
+
