@@ -14,7 +14,7 @@ header, .class-title{
     margin-bottom: 20px;
 }
 
-header p{
+.modify-date{
     font-size: x-small;
 }
 
@@ -30,7 +30,7 @@ header .dropdown-menu a:hover{
     background-color: grey;
     color: #d9e4dd;
 }
-.navbar .active {
+header .navbar .active {
     background-color: grey;
     color: #d9e4dd;
 }
@@ -55,7 +55,7 @@ main .navbar-brand a:hover{
 /*clock-design */
 .cd{
     border: 3px solid black;
-    font-size: 1.3em;
+    font-size: 1.1em;
     background-color: #d9e4dd;
     color: #555555;
     margin: 20px;
