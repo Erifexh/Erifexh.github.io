@@ -1,13 +1,16 @@
-function timeToTT(){
+function timeTo(time){
     let d = new Date();
-    let d2 = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), 4, 0 , 0));
+    let d2 = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), time, 0 , 0));
 
     let total = d2.getTime() - d.getTime();
+    console.log(total);
     if(total <= 0) total += 864000000;
 
     let seconds = Math.floor((total/1000)%60);
     let minutes = Math.floor((total/1000/60)%60);
     let hours = Math.floor((total/1000/60/60)%24);
+
+    console.log(total);
 
     return {
         total,
@@ -20,21 +23,32 @@ function timeToTT(){
 displayClock = function(){
     if(document.querySelector("#tt-hours")){
         const timeinterval = setInterval(()=>{
-            let t = timeToTT();
-            document.querySelector("#tt-hours").innerHTML = `${t.hours}`; 
-            document.querySelector("#tt-minutes").innerHTML = `${t.minutes}`;    
-            document.querySelector("#tt-seconds").innerHTML = `${t.seconds}`;
-    
-            if(t.total <= 3600000){
-                document.querySelector("#setup-timer").innerHTML = `Setup Ongoing!!`;
+            let tt = timeTo(4); //utc 4:00
+            let setup = timeTo(3); //utc 3:00
+
+            if(tt.hours >= 23 && tt.minutes >= 30){
+                document.querySelector("#tt-timer").innerHTML= `TT may be Ongoing!! Check LFG or yell in guild chat`;
+                document.querySelector("#setup-timer").innerHTML = `TT may be Ongoing!! Check LFG or yell in guild chat`;
             }
             else{
-                document.querySelector("#st-hours").innerHTML = `${t.hours -1}`;
-                document.querySelector("#st-minutes").innerHTML = `${t.minutes}`;
-                document.querySelector("#st-seconds").innerHTML = `${t.seconds}`;
+                document.querySelector("#tt-hours").innerHTML = `${tt.hours}`; 
+                document.querySelector("#tt-minutes").innerHTML = `${tt.minutes}`;    
+                document.querySelector("#tt-seconds").innerHTML = `${tt.seconds}`;
+
+                if(setup.hours < 1){
+                    document.querySelector("#setup-timer").innerHTML = `Setup Ongoing!!`;
+                }
+                else{
+                    document.querySelector("#st-hours").innerHTML = `${setup.hours}`;
+                    document.querySelector("#st-minutes").innerHTML = `${setup.minutes}`;
+                    document.querySelector("#st-seconds").innerHTML = `${setup.seconds}`;
+                }
             }
+
+    
             
-            if(t.total< 0){
+            
+            if(tt.total< 0){
                 clearInterval(timeinterval);
             }
         },1000);
@@ -42,10 +56,11 @@ displayClock = function(){
 }
 
 function modifyDate(){
-    let d = new Date(document.lastModified);
-    let html = document.querySelector("#modify-date");
-    let options = {month: 'long'}
-    html.innerHTML = `Updated: ${new Intl.DateTimeFormat('en-US', options).format(d)}/${d.getDate()}/${d.getFullYear()}`;
+    if(document.querySelector(".modify-date")){
+        let d = new Date(document.lastModified);
+        let options = {month: 'long'}
+        document.querySelector(".modify-date").innerHTML = `Updated: ${new Intl.DateTimeFormat('en-US', options).format(d)}/${d.getDate()}/${d.getFullYear()}`;
+    }
 }
 
 window.onload = function(){
