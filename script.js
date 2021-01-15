@@ -28,7 +28,7 @@ displayClock = () =>{
             let t = timeToTT(); //utc 4:00
             let tt = document.querySelector("#tt-timer");
 
-            if(t.hours >= 23 && tt.minutes >= 30){
+            if(t.hours >= 23 && t.minutes >= 30){
                 tt.innerHTML= `TT may be Ongoing!! Check LFG or yell in guild chat`;
                 tt.style.color = "#7a0404";
                 tt.style.fontSize = "larger";
