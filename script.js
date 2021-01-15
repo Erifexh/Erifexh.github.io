@@ -10,7 +10,7 @@ quickCopy = (id) =>{
 
 timeToTT = () =>{
     let d = new Date();
-    let d2 = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), 4, 0 , 0));
+    let d2 = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), 4, 0, 0));
 
     let total = d2.getTime() - d.getTime();
     if(total <= 0) total += 864000000;
@@ -29,24 +29,27 @@ displayClock = () =>{
             let tt = document.querySelector("#tt-timer");
 
             if(t.hours >= 23 && t.minutes >= 30){
-                if(t.minutes > 20){tt.innerHTML= `TT may have ended or is close to the end`;}
+                if(t.minutes < 40){tt.innerHTML= `TT may have ended or is close to the end`;}
                 else{tt.innerHTML= `TT may be Ongoing!! Check LFG or yell in guild chat`;}
-                tt.style.color = "#7a0404";
-                tt.style.fontSize = "larger"; 
             }
             else{
-                document.querySelector("#tt-hours").innerHTML = `${t.hours}`; 
-                document.querySelector("#tt-minutes").innerHTML = `${t.minutes}`;    
-                document.querySelector("#tt-seconds").innerHTML = `${t.seconds}`;
+                tt.innerHTML = "";
+                document.querySelector("#tt-hours").innerHTML = `${t.hours} H `;
+                document.querySelector("#tt-hours").style.fontSize = "xx-large";
+                document.querySelector("#tt-minutes").innerHTML = `${t.minutes} M `;   
+                document.querySelector("#tt-minutes").style.fontSize = "xx-large"; 
+                document.querySelector("#tt-seconds").innerHTML = `${t.seconds} S `;
+                document.querySelector("#tt-seconds").style.fontSize = "xx-large";
 
                 if(t.hours <1 && t.minutes > 30){
-                    document.querySelector("#announce").innerHTML = `Setup Ongoing!!`;
+                    tt.innerHTML = `Setup Ongoing!!`;
                 }
                 else if(t.hours <1 && t.minutes <= 30){
-                    document.querySelector("#announce").innerHTML = `Taxi up! Check LFG or yell in guild chat`;
+                    tt.innerHTML = `Taxi up! Check LFG or yell in guild chat`;
                 }
-
             }
+            tt.style.color = "#7a0404";
+            tt.style.fontSize = "larger"; 
         },1000);
     } 
 };
