@@ -176,7 +176,8 @@ main .dropdown-menu {
 .weapon-box,
 .trinket-box,
 .prof-box,
-.skill-box{
+.skill-box,
+.box{
     background-color: #cdc9c3;
     margin: 20px 0px;
     padding: 0;
@@ -190,6 +191,13 @@ main .dropdown-menu {
     width: 100px;
     padding: 0;
     margin: 0;
+}
+
+.invuln-box div,
+.reflect-box div,
+.defense-box div{
+    text-align: left;
+    padding-left: 10%;
 }
 
 h4{

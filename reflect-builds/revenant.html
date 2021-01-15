@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
-    <title>Main</title>
+    <title>Revenant</title>
 </head>
 <body class="container">
     <header>
@@ -45,7 +45,7 @@
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item disabled" href="#">Meta Reflect Builds</a></li>
                       <li><a class="dropdown-item" href="/reflect-builds/firebrand.html">Guardian</a></li>
-                      <li><a class="dropdown-item" href="/reflect-builds/revenant.html">Revenant</a></li>
+                      <li><a class="dropdown-item active" href="/reflect-builds/revenant.html">Revenant</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item disabled" href="#">Meta Block/Reflect Builds</a></li>
                       <li><a class="dropdown-item" href="/reflect-builds/mirage.html">Mesmer</a></li>
@@ -61,53 +61,85 @@
         </nav>
     </header>
     <main class="container">
-        <div id="tt-clock">
-            <div class="row justify-content-center cd">
-                <div class="col col-lg-6" id="announce"></div>
-                <div class="w-100"></div>
-                <div class="col-2 align-self-center">
-                    <span>Time to TT: </span>
-                </div>
-                <div class="col-8 align-self-center" id="tt-timer">
-                    <div class="row justify-content-start align-items-center">
-                        <div class="col-3">
-                            <div class="col-12 ic" id="tt-hours"></div>
-                            <div class= col-12> H </div>
-                        </div>
-                        <span class="col align-self-center">:</span>
-                        <div class="col-3">
-                            <div class="col-12 ic" id="tt-minutes"></div>
-                            <div class= col-12> M </div>
-                        </div>
-                        <span class="col align-self-center">:</span>
-                        <div class="col-3">
-                            <div class="col-12 ic" id="tt-seconds"></div>
-                            <div class= col-12> S </div>
-                        </div>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-c-revenant">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Revenant Reflect Builds</a>
+            </div>
+        </nav>
+        <div class="class-title bg-c-revenant">
+            <h1>Revenant - all flavors</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="note col-lg-8">
+                <p>
+                    <b>Disclaimer: [EVOS]</b> stresses that class familiarity is helpful when learning Reflect/Block. However, you are not required to have anything beyond access to these classes when learning to Reflect/Block. The rest can, and will, be taught upon joining.
+                </p>
             </div>
         </div>
-        
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <div class="input-group">
-                    <span class="input-group-text">Firthside Vigil Waypoint: </span>
-                    <input class="form-control" type="text" value="[&BKoBAAA=]" readonly>
+                    <span class="input-group-text">Build template</span>
+                    <input class="form-control" type="text" value="[&DQkJKgMmDx7cEQAAKxIAAAYSAADUEQAAyhEAAA8SAAAAAAAAAAAAAAAAAAA=]" readonly>
                     <button class="btn btn-outline-secondary" id="copy-button" onclick="quickCopy(this.id)">Copy Text</button>
                 </div>
             </div>
         </div>
-
-        <div class="row align-items-center justify-content-center">
-            <div class="col-md-4 quag">
-                <h2>Happy HoOOooOlidays!</h2>
-                <img src="https://static.staticwars.com/quaggans/aloha.jpg" alt="">
+        <hr>
+        <div>
+            <div class="row justify-content-around">
+                <div class="col-md-4 prof-box">
+                    <h4>Stances</h4>
+                    <div class="row">
+                        <div class="col" data-armory-embed="skills" data-armory-ids="28195"></div>
+                        <span class="col">Legendary Centaur Stance (Ventari)</span>
+                    </div>
+                </div>
+                <div class="col-md-6 skill-box">
+                    <h4>Skills</h4>
+                    <div data-armory-embed="skills" data-armory-ids="29148,26821,29082,27715,27356"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-around">
+                <div class="col-md-3 invuln-box box align-self-center">
+                    <h4>Invulnerabilities</h4>
+                    <span>N/A</span>
+                </div>
+                <div class="col-md-3 reflect-box box align-self-center">
+                    <h4>Reflects</h4>
+                    <div data-armory-size="35" data-armory-embed="skills" data-armory-ids="26821" data-armory-inline-text="wiki"></div>
+                </div>
+                <div class="col-md-3 defense-box box align-self-center">
+                    <h4>Defenses</h4>
+                    <span>N/A</span>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-around">
+                <div class="rotation-notes col-8">
+                    <h4>Notes</h4>
+                    <div class="side">
+                        <ol>
+                            <li>
+                                Maintain 
+                                <span class="di" data-armory-size="25" data-armory-embed="skills" data-armory-ids="26821" data-armory-inline-text="wiki"></span> 
+                                for at 2 least spits. Can happen away from the wurm.
+                            </li>
+                            <li>
+                                Stay in combat.
+                            </li>
+                            <li>
+                                Aside from 
+                                <span class="di" data-armory-size="25" data-armory-embed="skills" data-armory-ids="26821" data-armory-inline-text="wiki"></span> 
+                                , the build is just suggestions.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
-
     </main>
-
     <footer>
         <div class="row justify-content-between">
             <div class="col-lg-6">All trademarks and copyrights on this site are owned by their respective owners.</div>

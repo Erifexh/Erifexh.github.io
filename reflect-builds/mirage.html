@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Mesmer</title>
+</head>
+<body class="container">
+    <header>
+        <h1 id="top">EVOS TT Builds</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">Main</a>
+              <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle drop" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Condi Builds
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <li><a class="dropdown-item" href="/condi.html">General Condi Guide</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/condi-builds/elementalist/weaver.html">Elementalist</a></li>
+                      <li><a class="dropdown-item" href="/condi-builds/engineer/holosmith.html">Engineer</a></li>
+                      <li><a class="dropdown-item" href="#">Guardian</a></li>
+                      <li><a class="dropdown-item" href="/condi-builds/mesmer/chronomancer.html">Mesmer</a></li>
+                      <li><a class="dropdown-item" href="#">Necromancer</a></li>
+                      <li><a class="dropdown-item" href="/condi-builds/ranger/soulbeast.html">Ranger</a></li>
+                      <li><a class="dropdown-item" href="/condi-builds/revenant/renegade.html">Revenant</a></li>
+                      <li><a class="dropdown-item" href="/condi-builds/thief/daredevil.html">Thief</a></li>
+                      <li><a class="dropdown-item" href="/condi-builds/warrior/berserker.html">Warrior</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Reflect Builds
+                    </a>
+                    <ul class="dropdown-menu mr-auto" aria-labelledby="navbarDropdown2">
+                      <li><a class="dropdown-item" href="/reflect.html">General Reflect Guide</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item disabled" href="#">Meta Reflect Builds</a></li>
+                      <li><a class="dropdown-item" href="/reflect-builds/firebrand.html">Guardian</a></li>
+                      <li><a class="dropdown-item" href="/reflect-builds/revenant.html">Revenant</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item disabled" href="#">Meta Block/Reflect Builds</a></li>
+                      <li><a class="dropdown-item active" href="/reflect-builds/mirage.html">Mesmer</a></li>
+                      <li><a class="dropdown-item" href="/reflect-builds/tempest.html">Elementalist</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="navbar-text modify-date"></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-c-mesmer">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Mesmer Reflect/Block Builds</a>
+              <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/reflect-builds/mesmer.html">Mesmer</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/reflect-builds/mirage.html">Mirage</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="class-title bg-c-mesmer">
+            <h1>Mirage</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="note col-lg-8">
+                <p>
+                    <b>Disclaimer: [EVOS]</b> stresses that class familiarity is helpful when learning Reflect/Block. However, you are not required to have anything beyond access to these classes when learning to Reflect/Block. The rest can, and will, be taught upon joining.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <span class="input-group-text">Build template</span>
+                    <input class="form-control" type="text" value="[&DQcBNhc1OyojDwAAggEAAIMBAAB/AQAA7RIAAAAAAAAAAAAAAAAAAAAAAAA=]" readonly>
+                    <button class="btn btn-outline-secondary" id="copy-button" onclick="quickCopy(this.id)">Copy Text</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="row justify-content-around">
+                <div class="col-lg-6 build-box align-self-center">
+                    <h4>Build</h4>
+                    <div class="build-specialization">
+                        <div data-armory-embed="specializations" data-armory-ids="1"   data-armory-1-traits="705,1889,704"></div> 
+                        <div data-armory-embed="specializations" data-armory-ids="23"   data-armory-23-traits="756,751,752"></div> 
+                        <div data-armory-embed="specializations" data-armory-ids="59"   data-armory-59-traits="2082,2174,2113"></div> 
+                    </div>
+                </div>
+                <div class="col-md-4 weapon-box align-self-center">
+                    <h4>Weapons</h4>
+                    <div class="row">
+                        <div class="col">
+                            <div data-armory-embed="items" data-armory-ids="13906"></div>
+                            <span>Scepter</span>
+                        </div>
+                        <div class="col">
+                            <div data-armory-embed="items" data-armory-ids="13983"></div>
+                            <span>Focus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-around">
+                <div class="col-md-5 prof-box">
+                    <h4>Profession skills</h4>
+                    <div class="col" data-armory-embed="skills" data-armory-ids="10191,10190,10287,10192"></div>
+                </div>
+                <div class="col-md-5 skill-box">
+                    <h4>Skills</h4>
+                    <div data-armory-embed="skills" data-armory-ids="21750,10247,10234,10302,29519"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-around">
+                <div class="col-md-3 invuln-box box align-self-center">
+                    <h4>Invulnerabilities</h4>
+                    <div data-armory-size="35" data-armory-embed="skills" data-armory-ids="10192" data-armory-inline-text="wiki"></div>
+                    <div data-armory-size="35" data-armory-embed="skills" data-armory-ids="21750" data-armory-inline-text="wiki"></div>
+                    <div data-armory-size="35" data-armory-embed="skills" data-armory-ids="10247" data-armory-inline-text="wiki"></div>
+                    <div data-armory-size="35" data-armory-embed="skills" data-armory-ids="10234" data-armory-inline-text="wiki"></div>
+                </div>
+                <div class="col-md-3 reflect-box box align-self-center side">
+                    <h4>Reflects</h4>
+                    <div data-armory-size="35" data-armory-embed="skills" data-armory-ids="10302" data-armory-inline-text="wiki"></div>
+                </div>
+                <div class="col-md-3 defense-box box align-self-center">
+                    <h4>Defenses</h4>
+                    <div class="outsource">
+                        <a href="https://wiki.guildwars2.com/wiki/Dodge" target="_blank"><img src="https://wiki.guildwars2.com/images/b/b2/Dodge.png" alt="">Dodge</a>
+                        <span class="outsource-text">Dodge</span>
+                    </div> 
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-around">
+                <div class="rotation-notes col-8">
+                    <h4>Notes</h4>
+                    <div class="side">
+                        <ol>
+                            <li> Take
+                                <span class="di" data-armory-embed="traits" data-armory-ids="752" data-armory-inline-text="wiki" data-armory-size="25"></span>
+                                gives invulnerability to all signets. 
+                                <span class="di" data-armory-embed="traits" data-armory-ids="740" data-armory-inline-text="wiki" data-armory-size="25"></span> 
+                                is extra heals.
+                                <br>
+                            </li>
+                            <li>
+                                <span class="di" data-armory-embed="skills" data-armory-ids="10192" data-armory-inline-text="wiki" data-armory-size="25"></span> 
+                                can be refreshed by 
+                                <span class="di" data-armory-embed="skills" data-armory-ids="10247" data-armory-inline-text="wiki" data-armory-size="25"></span>
+                            </li>
+                            <li>
+                                Video by Misato: <a href="https://www.youtube.com/embed/ecVANcc9dVo" target="_blank">link</a> 
+                                (opens in new tab)
+                                <br>
+                                <iframe width="50%" height="250" src="https://www.youtube.com/embed/ecVANcc9dVo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row justify-content-between">
+            <div class="col-lg-6">All trademarks and copyrights on this site are owned by their respective owners.</div>
+            <div class="col-lg-2">
+                <span>Maintained by Erife</span>
+            </div>
+            <div class="col-lg-1"><a href="#top">TOP</a></div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script async src="https://unpkg.com/armory-embeds@^0.x.x/armory-embeds.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+</body>
+</html>
