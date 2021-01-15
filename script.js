@@ -29,9 +29,10 @@ displayClock = () =>{
             let tt = document.querySelector("#tt-timer");
 
             if(t.hours >= 23 && t.minutes >= 30){
-                tt.innerHTML= `TT may be Ongoing!! Check LFG or yell in guild chat`;
+                if(t.minutes > 20){tt.innerHTML= `TT may have ended or is close to the end`;}
+                else{tt.innerHTML= `TT may be Ongoing!! Check LFG or yell in guild chat`;}
                 tt.style.color = "#7a0404";
-                tt.style.fontSize = "larger";
+                tt.style.fontSize = "larger"; 
             }
             else{
                 document.querySelector("#tt-hours").innerHTML = `${t.hours}`; 
